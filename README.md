@@ -41,6 +41,12 @@ Push2Proxy can be used both in Max for Live and in Max standalone. This mainly d
 
 Technically, the strong coupling between Push2 and Live remains the foundation. On top of that, additional layers are introduced to bring Max in control.
 
+⭐ Support
+
+If you find this project useful, giving it a star on GitHub is appreciated.
+
+It is a simple way to show that the project is being used, and it helps to decide how much time to invest in further development — including Push2Proxy itself and the next stage, Neoplay.
+
 ---
 
 ## Architecture

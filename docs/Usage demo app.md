@@ -8,15 +8,15 @@ This document describes how to use the demo application and explains the master 
 
 The demo files are located in:
 
-
 /src - Max and Live
-
 
 The main file is:
 
-
 Push2Proxy_Max9.amxd
 
+An additional helper device is included:
+
+UdpEventBooster.amxd
 
 ---
 
@@ -29,6 +29,18 @@ The main device contains:
 - A single button to open the demo interface
 - A tabstrip with multiple views
 - A "View Patch" button to inspect the internal structure
+
+UdpEventBooster.amxd is a separate helper device. It should be placed on an empty MIDI track. Its purpose is to make communication with the control surface faster.
+
+---
+
+## UdpEventBooster
+
+UdpEventBooster.amxd should be placed on an otherwise empty MIDI track.
+
+Its purpose is to improve the speed of communication with the control surface. It does not replace the main demo device, but supports it.
+
+If you use the demo Live set, it is recommended to include this device so that communication feels more responsive.
 
 ---
 
@@ -81,19 +93,19 @@ Tracks selections in the Live browser. In practice this component is complex and
 
 ---
 
-## Master Track Control
-
-Push2Proxy does not directly control the Master track. Instead, control is routed through a Return track.
-
----
-
 ## Demo Live Set
 
 A demo Live set is included:
 
-
 /src - Max and Live/Test_Push2Proxy Project/Test_Push2Proxy.als
 
+If you use this Live set, you can add UdpEventBooster.amxd to an empty MIDI track to improve communication speed with the control surface.
+
+---
+
+## Master Track Control
+
+Push2Proxy does not directly control the Master track. Instead, control is routed through a Return track.
 
 ---
 
@@ -116,9 +128,7 @@ To move control to a Return track:
 2. Rename the Return track (for example: "Master")
 3. Remove:
 
-
 master_track_signal.amxd
-
 
 4. Disable all plugins except the control components
 5. Keep active:
@@ -145,4 +155,5 @@ The actual Master track is no longer directly visible to Push2Proxy, but remains
 
 - The system relies on Ableton routing and requires some understanding of Live
 - The demo is intended for exploration, not as a finished workflow
+- UdpEventBooster.amxd should be placed on an empty MIDI track
 - Some behaviors (such as red ring reporting) are not fully consistent in Live
