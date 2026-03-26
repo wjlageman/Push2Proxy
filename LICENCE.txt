@@ -1,0 +1,21 @@
+Push2Proxy License
+
+Copyright (c) 2026 Willem Lageman AKA Xanadu
+
+All rights reserved.
+
+This software is provided as source-available freeware.
+
+Permission is granted to use this software for personal and non-commercial purposes.
+
+You are allowed to:
+- Use the software for personal and non-commercial purposes
+- Study and modify the source code for personal use
+
+You are NOT allowed to:
+- Use this software or any part of it for commercial purposes without explicit written permission from the author
+- Distribute modified versions or create public forks without permission from the author
+
+If you are interested in commercial use or collaboration, please contact the author.
+
+This software is provided "as is", without warranty of any kind.
